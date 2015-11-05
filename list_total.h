@@ -8,4 +8,9 @@ typedef struct ListNode_
     
 }ListNode;
 
+enum
+{
+    TRUE,
+    FALSE,
+};
 #endif

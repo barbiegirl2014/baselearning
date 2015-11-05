@@ -77,6 +77,30 @@ void print_the_last_kth_node(ListNode *head, int k)
     printf("the last %dth node is %d\n",index,behind->key);
 }
 
+int list_is_loop(ListNode *head)
+{
+    ListNode *slow = head, *fast = head;
+
+    while(fast != NULL && fast->next != NULL)
+    {
+        slow = slow->next;
+        fast = fast->next->next;
+        if(slow == fast)
+        {
+            break;
+        }
+    }
+
+    if(fast == NULL || fast->next == NULL)
+    {
+        return FALSE;
+    }
+    else
+    {
+        return TRUE;
+    }
+}
+
 /* testing program */
 int main(void)
 {
