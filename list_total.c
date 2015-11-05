@@ -90,6 +90,7 @@ int main(void)
     fprintf(stdout,"the list after reverse:\n");
     print_list(head);
 #endif
+
     print_list(head);
     print_the_last_kth_node(head,1);
     print_the_last_kth_node(head,10);
