@@ -13,4 +13,11 @@ enum
     TRUE,
     FALSE,
 };
+
+typedef struct Stack_
+{
+    ListNode *top;
+    int size;
+}Stack;
+
 #endif
